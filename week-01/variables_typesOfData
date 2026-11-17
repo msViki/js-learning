@@ -1,0 +1,21 @@
+//E-book tasks
+let admin;
+let name;
+name = 'John';
+admin = name;
+console.log (admin)
+
+let EARTH;
+let userName;
+
+//Claude tasks
+name = 'Vika';
+let age = 26;
+let city = 'Mogilev';
+let isStudent = false;
+console.log (`Меня зовут ${name}, мне ${age} лет, я живу в ${city}`);
+console.log (typeof name);
+console.log (typeof age);
+console.log (typeof city);
+console.log (typeof isStudent);
+console.log (typeof null);
