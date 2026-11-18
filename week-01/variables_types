@@ -3,7 +3,7 @@ let admin;
 let name;
 name = 'John';
 admin = name;
-console.log (admin)
+console.log(admin)
 
 let EARTH;
 let userName;
@@ -14,12 +14,12 @@ name = 'Вика';
 let age = 26;
 let city = 'Могилёв';
 let isStudent = false;
-console.log (`Меня зовут ${name}, мне ${age} лет, я живу в ${city}`);
-console.log (typeof name);
-console.log (typeof age);
-console.log (typeof city);
-console.log (typeof isStudent);
-console.log (typeof null);
+console.log(`Меня зовут ${name}, мне ${age} лет, я живу в ${city}`);
+console.log(typeof name);
+console.log(typeof age);
+console.log(typeof city);
+console.log(typeof isStudent);
+console.log(typeof null);
 //3
 const laptop = 'mac';
 // laptop = 'linux'; ошибка - присвоение значения константе
@@ -32,16 +32,19 @@ console.log(true + 1);
 console.log([] + []);
 //5
 let price = 19.99;
+let discountPercent = 15;
 let amount = 3;
+
 let sum = price * amount;
-let discountPrice = sum * 0.75;
-console.log(`Полная сумма - ${sum.toFixed(2)}, 
-    Сумма со скидкой - ${discountPrice.toFixed(2)}`);
-    console.log (0.1 + 0.2);
-    //6
-    /*  Значение let может изменяться, а consct и var нет. 
-    Var не видит границ блоков и действует либо глобально, либо локально внутри функции.
-    Объявить const дважны нельзя - будет ошибка, var - можно, 
-    просто код проигнорирует второе объявление.
-    */
-    
+let discountPrice = sum * (1 - discountPercent / 100);
+console.log(`Полная сумма - ${sum.toFixed(2)}, Сумма со скидкой - ${discountPrice.toFixed(2)}`);
+
+console.log(0.1 + 0.2);
+
+//6
+/*  Значение let и var может изменяться, а const нет.
+let и const видны только в блоке. 
+Var не видит границ блоков и действует либо глобально, либо локально внутри функции.
+Объявить const и let дважды нельзя - будет ошибка, var - можно, 
+просто код проигнорирует второе объявление, а значение присвоит.
+*/
